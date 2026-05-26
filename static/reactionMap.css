@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+	
+	--textcolour: hsl(156,15%,15%);
+	--highlight: hsl(0,0%,100%);
+	--shadow: hsla(200,50%,40%,50%);
+	
+	--backgroundlight: hsl(0,0%,100%);
+	--backgroundmiddle: hsl(0,0%,100%);
+	--backgrounddark: hsl(156,35%,96%);
+
+	--greenlight: hsl(156, 65%, 40%);
+	--greenmiddle: hsl(166, 45%, 34%);
+	--greendark: hsl(176, 35%, 28%);
+}
+
+body {
+	background: var(--backgrounddark);
+	color: var(--textcolour);	
+	font-family: "Lexend Deca" !important;
+	margin: 0px
+}
+
+h1 {
+	margin: 48px 0px 16px 0px;
+	font-size: 48px;
+}
+
+h3 {
+	margin: 12px 0px 4px 0px;
+	text-align: center;
+}
+
+p {
+	padding: 0px 6px 0px 6px
+}
+
+.container {
+	width: 100vw;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.navbar-container {
+	width: 100%;
+	background: var(--greenmiddle);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	position: fixed;
+	top: 0%;
+	left: 0%;
+}
+
+.title-container, .reactions-container {
+	width: 70%;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.info-preview-all-container {
+	display: flex;
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.reactionmap-container, .table-container, .additional-info-container {
+	width: 70%;
+	align-items: center;
+	border-radius: 16px;
+	border: none;
+	background: var(--backgroundmiddle);
+	margin-bottom: 16px;
+	padding: 12px
+}
+
+.reactionmap-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row
+}
+
+.table-container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.reactants-container, .products-container {
+	display: flex;
+	width: 35%;
+	margin: 4px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.current-chemical-container {
+	display: flex;
+	width: 30%;
+	margin: 4px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.reaction-container {
+	width: 100%;
+	display: flex;
+	margin: 4px 0px 4px 0px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	border: 2px solid var(--greenmiddle);
+	border-radius: 12px;
+	background: var(--backgroundlight);
+	transition: transform 0.2s
+}
+
+.reaction-container:hover {
+	transform: scale(1.02)
+}
+
+.info-preview-container {
+	background: var(--backgroundmiddle);
+	width: 31%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 0px;
+	margin: 6px;
+	border-radius: 16px;
+	border: 2px solid var(--greendark);
+	transition: transform 0.2s;
+}
+
+.info-preview-container:hover {
+	transform: scale(1.02)
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	font-size: 20px;
+}
+
+.navlink {
+	color: var(--backgroundlight);
+	padding: 12px 24px;
+	margin: 0px;
+	transition: background 0.2s
+}
+
+.navlink:hover {
+	background: var(--greendark)
+}
+
+.navsearch {
+	padding: 0px 32px;
+	margin: 0px;
+}
+
+.navsearch-input, .navsearch-submit {
+	font-family: "Lexend Deca" !important;
+	font-size: 18px;
+	background: transparent;
+	border: 2px solid var(--backgroundlight);
+	color: var(--backgroundlight);
+	border-radius: 4px;
+	transition: background 0.2s
+}
+
+.navsearch-input:focus {
+	background: var(--greendark);
+	outline: none
+}
+
+.navsearch-submit:hover {
+	background: var(--greenlight)
+}
+
+::placeholder {
+	color: var(--backgrounddark);
+}
+
+a {
+	text-decoration: none
+}
+
+.reaction-container:link, .info-preview-container:link, .reaction-container:visited, .info-preview-container:visited  {
+	color: var(--textcolour)
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+	width: 100%;
+	margin: 12px;
+	border-collapse: collapse;
+	background: var(--backgroundlight);
+}
+
+th,td,tr {
+	text-align: left;
+	border: 2px solid var(--greenmiddle);
+	padding: 6px;
+}
+
+#qa-target {
+	width: 20%
+}
+	
