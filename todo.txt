@@ -1,0 +1,31 @@
+- Confirm page layouts
+  - Home
+  - Functional groups summary
+  - Functional groups (example page: Alkanes)
+  - Reagents and Conditions
+  - QA Tests
+
+- Pages
+  - Functional Groups
+    - Alkanes
+    - Alkenes
+    - Arenes
+    - Halogen Derivatives
+    - Alcohols (and Phenol)
+    - Carbonyls
+    - Carboxylic Acids 
+    - Carboxylic Acid derivatives (Esters, etc)
+    - Amines
+    - Amides
+    - Amino Acids
+    - Polymers(?)
+  - Reagents and Conditions
+  - Home
+  - Functional group Summary
+  - Others (eg Updates, Newsletters)
+
+  - Reaction Mechanisms
+    - Electrophilic Addition
+    - Electrophilic Substitution
+    - Nucleophilic Substitution
+    - Nucleophilic Addition
