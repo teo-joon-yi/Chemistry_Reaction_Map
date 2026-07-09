@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
 
 :root {
 	
@@ -18,7 +18,7 @@
 body {
 	background: var(--backgrounddark);
 	color: var(--textcolour);	
-	font-family: "Lexend Deca" !important;
+	font-family: "Solway" !important;
 	margin: 0px
 }
 
@@ -177,12 +177,13 @@ p {
 }
 
 .navsearch-input, .navsearch-submit {
-	font-family: "Lexend Deca" !important;
+	font-family: "Solway" !important;
 	font-size: 18px;
 	background: transparent;
 	border: 2px solid var(--backgroundlight);
 	color: var(--backgroundlight);
 	border-radius: 4px;
+	padding: 4px;
 	transition: background 0.2s
 }
 
