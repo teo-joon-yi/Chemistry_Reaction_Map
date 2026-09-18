@@ -1,9 +1,6 @@
 - Confirm page layouts
-  - Home
-  - Functional groups summary
-  - Functional groups (example page: Alkanes)
-  - Reagents and Conditions
-  - QA Tests
+  - Reagents and Conditions (individual)
+  - Mechanisms (individual)
 
 - Pages
   - Functional Groups
@@ -21,7 +18,6 @@
     - Polymers(?)
   - Reagents and Conditions
   - Home
-  - Functional group Summary
   - Others (eg Updates, Newsletters)
 
   - Reaction Mechanisms
