@@ -10,11 +10,11 @@
 <div class="container">
 	<div class = "navbar-container">
 		<nav class="navbar">
-			<a class="navlink" href = "reactionMapHome.html"><b>Home</b></a>
-			<a class="navlink" href = "reactionMapFunctionalGroups.html"><b>Functional Groups</b></a>
-			<a class="navlink"><b>RnC</b></a>
-			<a class="navlink"><b>Mechanisms</b></a>
-			<a class="navlink" href = "reactionMapQATests.html"><b>QA Tests</b></a>
+			<a class="navlink" href = {{url_for("home")}} ><b>Home</b></a>
+			<a class="navlink" href = {{url_for("functionalGroups")}}><b>Functional Groups</b></a>
+			<a class="navlink" href = {{url_for("reagentsConditions")}}><b>RnC</b></a>
+			<a class="navlink" href = {{url_for("mechanisms")}}><b>Mechanisms</b></a>
+			<a class="navlink" href = {{url_for("qaTests")}}><b>QA Tests</b></a>
 		</nav>
 		<form method = "GET" action = "test" class = "navsearch">
 			<input type = "text" placeholder = "Search for a page" name = "search" class = "navsearch-input" required>
@@ -24,7 +24,6 @@
 	
 	<div class="title-container">
 		<h1>QA Tests</h1>
-		<p>Placeholder text</p>
 	</div>
 	
 	<div class = "table-container">
