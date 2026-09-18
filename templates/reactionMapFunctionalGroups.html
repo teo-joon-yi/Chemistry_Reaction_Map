@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head> 
+	<title>Functional Groups - Reaction Map</title>
+	<link rel="stylesheet" href="../static/reactionMap.css">
+</head>
+
+<body>
+
+<div class="container">
+	<div class = "navbar-container">
+		<nav class="navbar">
+			<a class="navlink" href = {{url_for("home")}} ><b>Home</b></a>
+			<a class="navlink" href = {{url_for("functionalGroups")}}><b>Functional Groups</b></a>
+			<a class="navlink" href = {{url_for("reagentsConditions")}}><b>RnC</b></a>
+			<a class="navlink" href = {{url_for("mechanisms")}}><b>Mechanisms</b></a>
+			<a class="navlink" href = {{url_for("qaTests")}}><b>QA Tests</b></a>
+		</nav>
+		<form method = "GET" action = "test" class = "navsearch">
+			<input type = "text" placeholder = "Search for a page" name = "search" class = "navsearch-input" required>
+			<input type = "submit" class = "navsearch-submit" value = "Search">
+		</form>
+	</div>
+	
+	<div class="title-container">
+		<h1>Functional Groups</h1>
+		<p>Placeholder text</p>
+	</div>
+	
+	<div class = "info-preview-all-container">
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "alkanes")}}>
+			<h3>Alkanes</h3>
+			<img src = "../static/functional-groups/alkanes.png" alt = "Alkanes">
+			<p>Contains C-C bond</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "alkenes")}}>
+			<h3>Alkenes</h3>
+			<img src = "../static/functional-groups/alkenes.png" alt = "Alkenes">
+			<p>Contains C=C bond</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "arenes")}}>
+			<h3>Arenes</h3>
+			<img src = "../static/functional-groups/arenes.png" alt = "Arenes">
+			<p>Contains R-C6H5</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "halogen-compounds")}}>
+			<h3>Halogen Compounds</h3>
+			<img src = "../static/functional-groups/halogen-compounds.png" alt = "Halogen Compounds">
+			<p>Contains a halogen (X) atom</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "alcohols")}}>
+			<h3>Alcohols</h3>
+			<img src = "../static/functional-groups/alcohols.png" alt = "Alcohols">
+			<p>Contains R-OH</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "phenols")}}>
+			<h3>Phenols</h3>
+			<img src = "../static/functional-groups/phenols.png" alt = "Phenols">
+			<p>Contains R-C6H4-OH</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "ketones")}}>
+			<h3>Ketones</h3>
+			<img src = "../static/functional-groups/ketones.png" alt = "Ketones">
+			<p>Contains R-CO-R</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "aldehydes")}}>
+			<h3>Aldehydes</h3>
+			<img src = "../static/functional-groups/aldehydes.png" alt = "Aldehydes">
+			<p>Contains R-CHO</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "carboxylic-acids")}}>
+			<h3>Carboxylic Acids</h3>
+			<img src = "../static/functional-groups/carboxylic-acids.png" alt = "Carboxylic Acids">
+			<p>Contains R-COOH</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "acyl-halides")}}>
+			<h3>Acyl Halides</h3>
+			<img src = "../static/functional-groups/acyl-halides.png" alt = "Acyl Halides">
+			<p>Contains R-CXO</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "esters")}}>
+			<h3>Esters</h3>
+			<img src = "../static/functional-groups/esters.png" alt = "Esters">
+			<p>Contains R-O-CO-R</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "amines")}}>
+			<h3>Amines</h3>
+			<img src = "../static/functional-groups/amines.png" alt = "Amines">
+			<p>Contains R-NR2</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "amides")}}>
+			<h3>Amides</h3>
+			<img src = "../static/functional-groups/amides.png" alt = "Amides">
+			<p>Contains R-NR-CO-R</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "phenylamines")}}>
+			<h3>Phenylamines</h3>
+			<img src = "../static/functional-groups/phenylamines.png" alt = "Phenylamines">
+			<p>Contains R-C6H4-NR2</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "nitriles")}}>
+			<h3>Nitriles</h3>
+			<img src = "../static/functional-groups/nitriles.png" alt = "Nitriles">
+			<p>Contains R-CN</p>
+		</a>
+		<a class = "info-preview-container" href={{url_for("getFunctionalGroup", functionalGroup = "cyanohydrins")}}>
+			<h3>Cyanohydrins</h3>
+			<img src = "../static/functional-groups/cyanohydrins.png" alt = "Cyanohydrins">
+			<p>Contains R-C(OH)(CN)R</p>
+		</a>
+	</div>
+</div>
+
+</body>
+</html>
