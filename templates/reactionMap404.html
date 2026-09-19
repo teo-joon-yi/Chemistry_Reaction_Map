@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head> 
+	<title>Home - Reaction Map</title>
+	<link rel="stylesheet" href="../static/reactionMap.css">
+</head>
+
+<body>
+
+<div class="container">
+	<div class = "navbar-container">
+		<nav class="navbar">
+			<a class="navlink" href = {{url_for("home")}} ><b>Home</b></a>
+			<a class="navlink" href = {{url_for("functionalGroups")}}><b>Functional Groups</b></a>
+			<a class="navlink" href = {{url_for("reagentsConditions")}}><b>RnC</b></a>
+			<a class="navlink" href = {{url_for("mechanisms")}}><b>Mechanisms</b></a>
+			<a class="navlink" href = {{url_for("qaTests")}}><b>QA Tests</b></a>
+		</nav>
+		<form method = "GET" action = "test" class = "navsearch">
+			<input type = "text" placeholder = "Search for a page" name = "search" class = "navsearch-input" required>
+			<input type = "submit" class = "navsearch-submit" value = "Search">
+		</form>
+	</div>
+	
+	<div class="title-container">
+		<h1>404 - Not Found</h1>
+		<p>You likely mistyped a URL. Here's a cat to cheer you up:</p>
+		<img src = "../static/error404.png">
+	</div>
+</div>
+
+</body>
+</html>
