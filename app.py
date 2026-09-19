@@ -1,4 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, abort
+
+validFunctionalGroups = ["alkanes", "alkenes", "arenes", "halogen-compounds", "alcohols", "phenols",
+                         "ketones", "aldehydes", "carboxylic-acids", "acyl-halides", "esters",
+                         "amines", "amides", "phenylamines", "nitriles", "cyanohydrins"]
 
 def linkToFileName(inStr):
     inList = inStr.strip().split("-")
@@ -40,6 +44,8 @@ def qaTests():
 
 @app.route("/functional-groups/<functionalGroup>", methods = ["GET"])
 def getFunctionalGroup(functionalGroup):
+    if functionalGroup not in validFunctionalGroups:
+        abort(404)
     return render_template(linkToFileName(functionalGroup))
 
 @app.route("/reagents-conditions/<reaction>", methods = ["GET"])
@@ -56,10 +62,12 @@ def getMechanism(mechanism):
 def search():
     if request.method == "GET":
         return render_template("reactionMapSearch.html")
-
     else:
         pass
-        
+
+@app.errorhandler(404)
+def notFound(temp):
+    return render_template("reactionMap404.html")
+
 if __name__ == "__main__":
     app.run()
-
