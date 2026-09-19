@@ -19,26 +19,27 @@ body {
 	background: var(--backgrounddark);
 	color: var(--textcolour);	
 	font-family: "Solway" !important;
-	margin: 0px
+	margin: 0rem
 }
 
 h1 {
-	margin: 48px 0px 16px 0px;
-	font-size: 48px;
+	margin: 3rem 0rem 0.7rem 0rem;
+	font-size: 3rem;
 }
 
 h3 {
-	margin: 12px 0px 4px 0px;
+	margin: 0.7rem 0rem 0.2rem 0rem;
 	text-align: center;
 }
 
 p {
-	padding: 0px 6px 0px 6px
+	padding: 0rem 0.3rem;
+	margin: 0.7rem 0rem
 }
 
 .container {
 	width: 100vw;
-	margin: 0px;
+	margin: 0rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center
@@ -59,7 +60,7 @@ p {
 
 .title-container, .reactions-container {
 	width: 70%;
-	margin-top: 32px;
+	margin-top: 1.8rem;
 	text-align: center;
 }
 
@@ -76,11 +77,11 @@ p {
 .reactionmap-container, .table-container, .additional-info-container {
 	width: 70%;
 	align-items: center;
-	border-radius: 16px;
+	border-radius: 1rem;
 	border: none;
 	background: var(--backgroundmiddle);
-	margin-bottom: 16px;
-	padding: 12px
+	margin-bottom: 1rem;
+	padding: 0.7rem
 }
 
 .reactionmap-container {
@@ -98,7 +99,7 @@ p {
 .reactants-container, .products-container {
 	display: flex;
 	width: 35%;
-	margin: 4px;
+	margin: 0.2rem;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -108,22 +109,22 @@ p {
 .current-chemical-container {
 	display: flex;
 	width: 30%;
-	margin: 4px;
+	margin: 0.2rem;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
 }
-.reaction-container {
+.reaction-container, .reaction-container-noclick {
 	width: 100%;
 	display: flex;
-	margin: 4px 0px 4px 0px;
+	margin: 0.2rem 0rem 0.2rem 0rem;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	border: 2px solid var(--greenmiddle);
-	border-radius: 12px;
+	border: 0.15rem solid var(--greenmiddle);
+	border-radius: 1vw;
 	background: var(--backgroundlight);
 	transition: transform 0.2s
 }
@@ -140,10 +141,10 @@ p {
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	padding: 0px;
-	margin: 6px;
-	border-radius: 16px;
-	border: 2px solid var(--greendark);
+	padding: 0rem;
+	margin: 0.3rem;
+	border-radius: 0.4rem;
+	border: 0.15rem solid var(--greendark);
 	transition: transform 0.2s;
 }
 
@@ -157,13 +158,13 @@ p {
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.2rem;
 }
 
 .navlink {
 	color: var(--backgroundlight);
-	padding: 12px 24px;
-	margin: 0px;
+	padding: 0.7rem 1.5rem;
+	margin: 0rem;
 	transition: background 0.2s
 }
 
@@ -172,18 +173,18 @@ p {
 }
 
 .navsearch {
-	padding: 0px 32px;
-	margin: 0px;
+	padding: 0rem 1.8rem;
+	margin: 0rem;
 }
 
 .navsearch-input, .navsearch-submit {
 	font-family: "Solway" !important;
-	font-size: 18px;
+	font-size: 1rem;
 	background: transparent;
-	border: 2px solid var(--backgroundlight);
+	border: 0.1rem solid var(--backgroundlight);
 	color: var(--backgroundlight);
-	border-radius: 4px;
-	padding: 4px;
+	border-radius: 0.2rem;
+	padding: 0.2rem;
 	transition: background 0.2s
 }
 
@@ -204,6 +205,10 @@ a {
 	text-decoration: none
 }
 
+img {
+	width: 95%;
+}
+
 .reaction-container:link, .info-preview-container:link, .reaction-container:visited, .info-preview-container:visited  {
 	color: var(--textcolour)
 }
@@ -214,15 +219,15 @@ a {
 
 table {
 	width: 100%;
-	margin: 12px;
+	margin: 0.7rem;
 	border-collapse: collapse;
 	background: var(--backgroundlight);
 }
 
 th,td,tr {
 	text-align: left;
-	border: 2px solid var(--greenmiddle);
-	padding: 6px;
+	border: 0.1rem solid var(--greenmiddle);
+	padding: 0.3rem;
 }
 
 #qa-target {
